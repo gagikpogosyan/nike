@@ -1,0 +1,257 @@
+@import url(../style/fonts.css);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background:#EBEBEB;
+} 
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+.icon {
+    font-family: 'fontawesome';
+}
+#menu-check {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+.menu-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    font-size: 45px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 200;
+    display: none;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.header-bg {
+    background-color: #322E41;
+}
+
+/* .header-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+.header-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header-link {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    padding: 23px 14px;
+    display: block;
+    /* transition-property: color; */
+/*     transition-duration: 0.1s; */
+    /* transition-duration: 500ms; */
+    /* transition-timing-function: ease; */
+    transition: all 400ms;
+}
+
+.header-link:hover {
+    background-color: #FFFFFF;
+    color: #D47300;
+}
+
+.section-intro {
+    background: url(../img/intro-bg.jpg) no-repeat center /cover;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+
+.intro-title {
+    font-size: 50px;
+    color: #FFFFFF;
+    line-height: 59px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.section-intro p, .section-intro span {
+    color:#FFFFFF;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+}
+.section-intro span {
+    font-weight: 700;
+}
+
+.news {
+    padding: 15px;
+    height: 100%;
+    background-color: #FFFFFF;
+    max-width: 540px;
+    width: 100%;
+    border-radius: 6px;
+}
+.news img {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.news-wrapper h2 {  
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color:#2C2A2A;
+}
+.news-wrapper p {
+    color: #9B9B9B;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+}
+
+.shoes-card {
+    background: #FFFFFF;
+    border-radius: 6px;
+    max-width: 255px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+}
+.shoes-card h3 {
+    color: #2C2A2A;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 6px;
+    margin: 12px 0;
+}
+.shoes-card p {
+    color: #9B9B9B;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.flex-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.shoes {
+    max-width: 540px;
+    width: 100%; 
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+main {
+    margin: -37px 0 30px;
+}
+
+.footer {
+    background-color: #322E41;
+    padding: 37px 0 57px;
+}
+
+.footer-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-wrap form {
+    max-width: 350px;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.footer-wrap form input, textarea {
+    border: none;
+    outline: none;
+}
+.footer-wrap form >:nth-child(n) {
+    padding: 8px;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+}
+.footer-wrap form >:last-child {
+    background-color: #544294;
+    padding: 6px;
+    font-size: 16px;
+    line-height: 13px;
+    color: #FFFFFF;
+}
+
+.footer-wrap form >:nth-child(n):not(:last-child) {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 10px;
+}
+.footer-wrap form >::placeholder{
+    color: #9B9B9B;
+}
+.footer-wrap form textarea {
+    height: 86px;
+}
+.footer-nav {
+    max-width: 237px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-link {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 19px;
+    transition: all 400ms;
+}
+.footer-link:hover {
+    color: #D47300;
+}
+
+.footer-nav ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
